@@ -1,0 +1,13 @@
+ "name": "ONG-Ajuda-Solidaria",
+  "version": "1.0.0",
+  "description": "Site acessível da ONG Ajuda Solidária",
+  "scripts": {
+    "minify": "html-minifier --input-dir . --output-dir dist --file-ext html --collapse-whitespace --remove-comments && cssnano css/*.css dist/css/ && uglifyjs js/*.js -o dist/js/app.min.js",
+    "build": "npm run minify"
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "cssnano": "^5.1.0",
+    "uglify-js": "^3.17.0"
+  }
+}
