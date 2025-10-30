@@ -6,6 +6,25 @@ body {
   padding: 0;
 }
 
+/* Contraste e foco */
+a:focus, button:focus, input:focus, select:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+.error {
+    color: var(--error-color);
+    font-weight: bold;
+}
+/* Modo escuro/alto contraste */
+[data-theme="dark"] body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+[data-theme="high-contrast"] body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
 .site-header {
   background-color: #243447;
   color: white;
