@@ -25,36 +25,33 @@ O projeto visa oferecer uma presença digital acessível, clara e responsiva par
 - Deploy automático via GitHub Pages — o site está disponível publicamente.
 
 ## 📂 Estrutura de Pastas  
-/
-|-- package.json (Configuração do projeto – dependências, scripts, etc)
-|-- .gitignore (Arquivos/padrões que o Git ignora)
-|-- LICENSE (Licença do projeto)
-|-- README.md (Esta documentação)
-|-- index.html (Página Inicial)
-|-- projetos.html (Página de Projetos)
-|-- cadastro.html (Página de Cadastro)
-|
-|-- css/
-| |-- base.css (Estilos básicos / reset)
-| |-- variables.css (Design System: cores, fontes, espaçamento)
-| |-- layout.css (Grid, container, breakpoints)
-| |-- responsive.css (Ajustes responsivos para dispositivos menores)
-| |-- header.css (Estilos específicos para o cabeçalho)
-| |-- components.css (Componentes reutilizáveis – botões, cards, etc)
-| |-- style.css (Arquivo principal que importa ou contém estilos finais)
-|
-|-- js/
-| |-- app.js (Arquivo principal da lógica da aplicação: acessibilidade, modo escuro, etc)
-| |-- formValidation.js (Validação de formulários: regras, exibição de erros em tempo real)
-| |-- router.js (Lógica de roteamento para SPA: navegação entre “páginas” sem reload)
-| |-- templates.js (Templates dinâmicos: geração de conteúdo com JS a partir de dados)
-|
-|-- images/
-| |-- contato.png (Ícone ou imagem relacionada à página de contato)
-| |-- doacao.png (Ícone ou imagem para seção de doações)
-| |-- formulario.jpg (Imagem ilustrativa para o formulário de cadastro ou contato)
-| |-- logo.jpg (Logo da ONG “Ajuda Solidária”)
-| |-- voluntariado.jpg (Imagem ilustrativa de voluntariado / ação social)
+- /  
+  - package.json — Configuração do projeto – dependências, scripts, etc  
+  - .gitignore — Arquivos/padrões que o Git ignora  
+  - LICENSE — Licença do projeto  
+  - README.md — Esta documentação  
+  - index.html — Página Inicial  
+  - projetos.html — Página de Projetos  
+  - cadastro.html — Página de Cadastro  
+  - css/  
+    - base.css — Estilos básicos / reset  
+    - variables.css — Design System: cores, fontes, espaçamento  
+    - layout.css — Grid, container, breakpoints  
+    - responsive.css — Ajustes responsivos para dispositivos menores  
+    - header.css — Estilos específicos para o cabeçalho  
+    - components.css — Componentes reutilizáveis – botões, cards, etc  
+    - style.css — Arquivo principal que importa ou contém estilos finais  
+  - js/  
+    - app.js — Arquivo principal da lógica da aplicação: acessibilidade, modo escuro, etc  
+    - formValidation.js — Validação de formulários: regras, exibição de erros em tempo real  
+    - router.js — Lógica de roteamento para SPA: navegação entre “páginas” sem reload  
+    - templates.js — Templates dinâmicos: geração de conteúdo com JS a partir de dados  
+  - images/  
+    - contato.png — Ícone ou imagem relacionada à página de contato  
+    - doacao.png — Ícone ou imagem para seção de doações  
+    - formulario.jpg — Imagem ilustrativa para o formulário de cadastro ou contato  
+    - logo.jpg — Logo da ONG “Ajuda Solidária”  
+    - voluntariado.jpg — Imagem ilustrativa de voluntariado / ação social)
 
 ## 🛠️ Como Rodar o Projeto Localmente  
 Como este site utiliza JavaScript para funcionalidades que requerem execução via servidor (por exemplo, roteamento, `fetch()`, tema via `localStorage`), abrir diretamente o `index.html` **não garante funcionamento correto** (por causa de políticas de segurança do navegador, CORS etc).
