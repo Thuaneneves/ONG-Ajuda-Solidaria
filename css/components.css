@@ -1,3 +1,45 @@
+/* Menu hambúrguer */
+#menuToggle {
+    display: none; /* Escondido em desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#navMenu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#navMenu li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Responsivo: Menu colapsível */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block;
+    }
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--bg-color);
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    #navMenu.open {
+        display: flex;
+    }
+}
+
+
 .card {
     border: 1px solid var(--primary-color);
     padding: 20px;
